@@ -31,4 +31,3 @@
 
 </android.support.design.widget.CoordinatorLayout>
 
-bash check
