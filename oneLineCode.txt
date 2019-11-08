@@ -1,3 +1,0 @@
-Get Color from xml using java :
-
-getResources().getColor(R.color.light_black)
