@@ -1,0 +1,17 @@
+Generating a new SSH key
+Open Git Bash.
+
+Paste the text below, substituting in your GitHub email address.
+
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+-------------------------------------------------------
+
+
+# start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+> Agent pid 59566
+-----------------------------------------------------
+
+$ ssh-add ~/.ssh/id_rsa
