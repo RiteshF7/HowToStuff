@@ -1,0 +1,4 @@
+docker exec -it dockerid /bin/sh
+
+
+remember : Where docker id is id of your running container not your docker images 
