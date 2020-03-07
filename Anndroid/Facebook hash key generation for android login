@@ -1,0 +1,49 @@
+link for reference : https://www.android-examples.com/generate-key-hash-for-facebook-in-android-in-windows/
+
+
+1. download x64 ssh file from link below :
+https://code.google.com/archive/p/openssl-for-windows/downloads
+
+ 
+Get Generate key hash for Facebook in android in windows XP,7,8.1,10
+ Juned Mughal May 8, 2016Android Examples Tutorials
+Simplest easiest method to access find key hash in windows step by step tutorial for beginners.
+The key hash is a type of simple authenticate key generate by your android development enviournment which will authenticate our developed android application ( In which we are going to add Facebook login ) and gives us the access to use Facebook login into our app. So here is the complete step by step tutorial for Get Generate key hash for Facebook in android in windows XP,7,8.1,10.
+
+
+ 
+Get Generate key hash for Facebook in android in windows XP,7,8.1,10
+
+How to Get Generate key hash for Facebook in android in windows XP,7,8.1,10.
+1. Download OpenSSL for windows form Google Code.
+
+2. After download OpenSSL extract the downloaded folder into C drive .
+
+openssl
+
+3. Now locate your debug.keystore file which is inside your .android folder. The folder is located on C:\Users\YourUserName\.android .
+
+4. Copy debug.keystore file into your JDK’s installation bin folder . For example My Jdk’s bin folder is located on C:\Program Files (x86)\Java\jdk1.7.0_72\bin .
+
+5. Start CMD ( Command prompt ) as Run as Administrator.
+
+6. Goto C:\Program Files (x86)\Java\jdk1.7.0_72\bin into Command prompt
+
+
+
+
+
+in jdk/bin cmd -
+
+keytool -exportcert -alias androiddebugkey -keystore debug.keystore > c:\openssl\bin\debugkey.txt
+
+in ssh/bin cmd
+
+1.openssl sha1 -binary debugkey.txt > debug_hash_key.txt
+2.openssl base64 -in debug_hash_key.txt > debug_real_key.txt
+
+(run both cmd)
+(hash key will be in ssh/bin in c drive)
+(change that hash key in markone app of facebook)
+
+
