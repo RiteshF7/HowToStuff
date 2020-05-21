@@ -1,2 +1,7 @@
-export ANDROID_HOME=/home/mycomputer/Android/Sdk/
+export ANDROID_HOME=/home/trex/Android/Sdk/
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+
+/// watcher limti reached !!@@!! fix cmd
+
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
