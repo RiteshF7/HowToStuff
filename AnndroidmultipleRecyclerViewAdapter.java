@@ -39,15 +39,15 @@ public class AdapterEditProfileMultipleRV extends RecyclerView.Adapter{
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view;
         switch (viewType){
-            case EDIT_PHOTO_VIEW:
+               case EDIT_PHOTO_VIEW:
                  view =layoutInflater.inflate(EDIT_PHOTO_VIEW,parent,false);
                 return new EditPhotoViewHolder(view);
             case EDIT_INFO_VIEW:
                  view =layoutInflater.inflate(EDIT_INFO_VIEW,parent,false);
-                return new EditPhotoViewHolder(view);
+                return new EditInfoViewHolder(view);
             case INFO_HEADER_VIEW:
                  view =layoutInflater.inflate(INFO_HEADER_VIEW,parent,false);
-                return new EditPhotoViewHolder(view);
+                return new InfoHeaderViewHolder(view);
             default:
                 view = layoutInflater.inflate(R.layout.default_rv_view_null,parent,false);
                 return new DefaultView(view);
