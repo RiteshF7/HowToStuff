@@ -1,0 +1,7 @@
+__________________________________________
+                                          |
+Open run -> services.msc                  |    
+find sysmain service                      |
+stop it and disable automatic running     |  
+                                          |
+__________________________________________|
