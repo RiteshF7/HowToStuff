@@ -5,3 +5,10 @@ find sysmain service                      |
 stop it and disable automatic running     |  
                                           |
 __________________________________________|
+
+
+IF -> Task Manager says that "Service Host: Cryptographic Services" is taking up 50 - 60% of my CPU
+
+In the prompt, type "sfc /scannow"
+
+Then type "Dism /Online /Cleanup-Image /RestoreHealth"
